@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レポートページ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>支出レポート</h1>
+    </header>
+
+    <section class="monthly-report">
+        <h2>月ごとの支出詳細</h2>
+        <!-- 支出詳細を表示する部分 -->
+        <div id="monthly-expenses"></div>
+    </section>
+
+    <section class="annual-trends">
+        <h2>年間の支出推移グラフ</h2>
+        <!-- 年間の支出推移を表示するグラフ -->
+        <div id="annual-chart"></div>
+    </section>
+
+    <section class="budget-comparison">
+        <h2>予算との比較</h2>
+        <!-- 予算との比較を表示 -->
+        <p>予算: ¥<span id="budget-amount">50,000</span></p>
+        <p>実際の支出: ¥<span id="actual-expenses">30,000</span></p>
+    </section>
+
+    <footer>
+        <p>© 2025 予算管理システム</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
