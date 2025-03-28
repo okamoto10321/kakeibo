@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>家計簿</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>予算管理システム</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>家計簿</h1>
-  <form id="expense-form">
-    <label for="expense-name">項目名:</label>
-    <input type="text" id="expense-name" name="expense-name" required>
-    
-    <label for="expense-amount">金額:</label>
-    <input type="number" id="expense-amount" name="expense-amount" required>
-    
-    <button type="submit">追加</button>
-  </form>
+    <header>
+        <h1>予算管理システム</h1>
+        <p>ようこそ、ユーザー名さん</p>
+    </header>
 
-  <div id="expense-list"></div>
+    <section class="overview">
+        <h2>月ごとの予算と支出の概要</h2>
+        <div class="budget-summary">
+            <p>予算: ¥<span id="monthly-budget">50,000</span></p>
+            <p>支出: ¥<span id="total-expense">30,000</span></p>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <section class="category-graph">
+        <h2>支出カテゴリー別グラフ</h2>
+        <!-- グラフを表示する部分 -->
+        <div id="expense-chart"></div>
+    </section>
+
+    <footer>
+        <p>© 2025 予算管理システム</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
