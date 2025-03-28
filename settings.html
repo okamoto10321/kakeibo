@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>設定ページ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>設定</h1>
+    </header>
+
+    <section class="settings">
+        <h2>予算設定</h2>
+        <label for="budget-amount">月ごとの予算設定:</label>
+        <input type="number" id="budget-amount" value="50000">
+
+        <h2>カテゴリー設定</h2>
+        <label for="category-name">新しいカテゴリー名:</label>
+        <input type="text" id="category-name">
+        <button id="add-category">カテゴリー追加</button>
+        
+        <h2>通貨・日付形式の設定</h2>
+        <label for="currency">通貨:</label>
+        <select id="currency">
+            <option value="yen">¥ (日本円)</option>
+            <option value="usd">USD (アメリカドル)</option>
+        </select>
+
+        <label for="date-format">日付形式:</label>
+        <select id="date-format">
+            <option value="yyyy-mm-dd">yyyy-mm-dd</option>
+            <option value="dd-mm-yyyy">dd-mm-yyyy</option>
+        </select>
+    </section>
+
+    <footer>
+        <p>© 2025 予算管理システム</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
